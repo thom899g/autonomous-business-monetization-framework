@@ -1,0 +1,23 @@
+# Configuration file for Autonomous Business Monetization Framework
+logging:
+  level: DEBUG
+  file: monetization.log
+
+pricing:
+  model: dynamic
+  max_adjustment: 0.2
+  min_price: 10.0
+  max_price: 500.0
+
+subscriptions:
+  tiered_plans:
+    basic: 9.99
+    pro: 29.99
+    enterprise: 99.99
+  discount_strategy: tier_based
+
+partnerships:
+  scoring_weight:
+    market_share: 0.4
+    customer_base: 0.3
+    revenue_contribution: 0.3
